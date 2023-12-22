@@ -157,6 +157,7 @@ body{
 
 /** CSS de Especificos seccion footer |seccion Inicio| **/
 
+
 .btn-crimsom {
     background-color: #93052b;
     border: #93052b 2px solid;
@@ -172,6 +173,12 @@ body{
 .btn-login-social i {
     vertical-align: text-top;
 }
+.btn-outline-custom:hover{
+    color: #31374a;
+    border-color: #eee;
+    background-color: #eee;
+}
+
 .bg-holder{
     position: absolute;
     width: 100%;
@@ -197,4 +204,12 @@ body{
 
 .divisor {
     margin: 1rem 0;
+}
+
+.olvide-contraseña {
+    text-decoration: none;
+}
+
+.olvide-contraseña:hover{
+    text-decoration: underline;
 }
