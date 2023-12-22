@@ -9,6 +9,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Bootsrap Iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="../css/styles.css">
     <title>Fright Folio</title>
 </head>
@@ -55,52 +57,80 @@
         <!-- Navbar END-->
     </header>
 
-    <section>
-        <div class="contenedor-fluid">
-            <div class="formulario">
-                <form action="">
-                    <h2 class="login-page-title">Iniciar Sesión</h2>
-                    <div class="input-contenedor">
-                        <i class="bi bi-envelope-at"> </i>
-                        <input type="email" required>
-                        <label for="#">Email</label>
+    <div class="row vh-100 g-0">
+        <!-- Lado Izquierdo-->
+        <div class="col-lg-6 position-relative d-none d-lg-block">
+            <div class="bg-holder" style="background-image: url(../img/bg.jpg);">
+            </div>
+        </div>
+        <!-- Lado Izquierdo-->
+        <!-- Lado Derecho-->
+        <div class="col-lg-6">
+            <div class="row align-items-center justify-content-center h-100 g-0 px-4 px-sm-0">
+                <div class="col col-sm-6 col-lg-7 col-xl-6">
+                    <!-- Logo-->
+                    <a href="#" class="d-flex justify-content-center mb-4">
+                        <img src="../img/frightfolio-logo.png" alt="" width="120">
+                    </a>
+                    <!--/ Logo-->
+                    <div class="text-center mb-5">
+                        <h3 class="fw-bold"></h3>
+                        <p class="text-secondary">Accede a Tu Cuenta</p>
                     </div>
-                    <div class="input-contenedor">
-                        <i class="bi bi-lock"></i>
-                        <input type="password" required>
-                        <label for="#">Contraseña</label>
+                    <!-- Login con Redes-->
+                    <button class="btn-login-social btn-outline-secondary w-100 mb-3">
+                        <i class='bx bxl-google text-danger me-1 fs-6'></i>Logea con Google
+                    </button>
+
+                    <button class="btn-login-social  btn-outline-secondary w-100 mb-3">
+                        <i class='bx bxl-facebook-circle text-primary me-1 fs-6'></i>Logea con FaceBook
+                    </button>
+
+                    <button class="btn-login-social btn-outline-secondary w-100 mb-3">
+                        <i class='bx bxl-apple text-dark me-1 fs-6'></i>Logea con Apple
+                    </button>
+                    <!--/ Login con Redes-->
+                    <!-- Divisor-->
+                    <div class="position-relative">
+                        <hr class="text-secondary divisor">
+                        <div class="divider-content-center">or</div>
+
                     </div>
-                    <div class="olvidar">
-                        <label for="#">
-                            <input type="checkbox">Recordar
-                            <a href="#">Olvidé la Contraseña</a>
-                        </label>
-                    </div>
-                </form>
-                <div>
-                    <button>Acceder</button>
-                    <div class="registrar">
-                        <p>No tengo cuenta <a href="#">Crear Una </a></p>
-                    </div>
+                    <!--/ Divisor-->
+
+                    <!--Form-->
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class='bx bx-user'></i>
+                            </span>
+                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Usuario">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class='bx bx-lock-alt'></i>
+                            </span>
+                            <input type="password" class="form-control form-control-lg fs-6" placeholder="Contraseña">
+                        </div>
+
+<div class="input-group mb-3">
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" id="formCheck">
+    <label for="formCheck" class="form-check-label text-secondary"> <small> Recuerdame </small>  </label>
+
+</div>
+</div>
+                    </form>
+
+                    <!--/Form-->
+
                 </div>
             </div>
+        </div>
+        <!-- Lado Derecho-->
+    </div>
 
-            <div class="contenedor-fluid">
-                <form class="mx-auto">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Dirección de Correo</label>
-                        <i class="bi bi-envelope-at"> </i>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Contraseña</label>
-                        <i class="bi bi-lock"></i>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </form>
-            </div>
-    </section>
     <footer class="bg-dark c-rosa container-fluid p-2">
         <div class="container">
             <div class="row border-bottom p-2 d-lg-flex justify-content-between align-items-center">
