@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootsrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Fright Folio</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">FrightFolio</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FrightFolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#"><span
+                                        class="inicio.nav">Inicio</span></a>
+                            </li>
+                            <a class="nav-link mx-lg-2" aria-current="page" href="pages/micripta.html">Mi cripta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page"
+                                    href="pages/peliculasyseries.html">Peliculas Y Series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="pages/misiones.html">Misiones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="pages/login.html" class="login-button">Login</a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Navbar END-->
+    </header>
+
+
+    <main>
+        <section class="carouselExampleCaptions d-flex justify-content-center w-lg-75">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/barranco.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-center text-lg-center display-2 fw-semibold c-main-titles">En FrightFolio
+                                Podrás
+                            </h1>
+                            <p class="text-center text-lg-center">Llevar un registro de todas las peliculas que has
+                                visto.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/casaarruinada.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-center text-lg-center display-2 fw-semibold c-main-titles">En FrightFolio
+                                Podrás
+                            </h2>
+                            <p class="text-center text-lg-center"> Muestra todo el amor por tus peliculas, listas y
+                                reseñas
+                                favoritas con un <span class="c-rosa">"Me Gusta"</span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/arbol.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-center text-lg-center display-2 fw-semibold c-main-titles">En FrightFolio
+                                Podrás
+                            </h2>
+                            <p class="text-center text-lg-center">Califica cada pelicula en una escala de una a cinco
+                                estrellas para
+                                registrar y compartir tu opinión.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions "
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions "
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </section>
+
+        <section class="mejor-calificados">
+            <div class="container">
+                <h2 class="c-gris text-center display-5 fw-semibold my-5">Mejor Calificados</h2>
+                <!--Inicio Row Mejor Calificados-->
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 col-sm-12">
+
+                        <div class="card mb-5 shadow-sm">
+                            <img src="./img/talk-tm.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h5 class="top-rated-card-title c-rosa">Talk To Me</h5>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                                    aliquam cum facere sint ullam sapiente possimus, doloremque ea culpa! Dolor,
+                                    suscipit.
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-negro float-end ">Leer Más</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-12">
+                        <div class="card mb-5 shadow-sm">
+                            <img src="./img/edr.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h5 class="top-rated-card-title c-rosa">Evil Dead Rise</h5>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                                    aliquam cum facere sint ullam sapiente possimus, doloremque ea culpa! Dolor,
+                                    suscipit.</p>
+                            </div>
+                            <a href="#" class="btn btn-negro float-end ">Leer Más</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-3 col-sm-12">
+                        <div class="card mb-5 shadow-sm">
+                            <img src="./img/Sweet-Home-5.jpg" class="card-img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h5 class="top-rated-card-title c-rosa"> Sweet Home</h5>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                                    aliquam cum facere sint ullam sapiente possimus, doloremque ea culpa! Dolor,
+                                    suscipit.</p>
+                            </div>
+                            <a href="#" class="btn btn-negro float-end ">Leer Más</a>
+                        </div>
+                    </div>
+                    <!--Inicio Row Mejor Calificados-->
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--
+    Para hacer un boton el profe hizo 
+    <div> class="d-flex justify-content-center justify-content-lg-start">
+    <a href="" class="btn btn-lg btn-lila><a>"
+    </div>
+-->
+
+        <section class="container maestros-del-terror">
+            <div class="row">
+                <h2 class="c-gris text-center display-5 fw-semibold  my-5">Maestros Del Terror</h2>
+                <div class="col">
+                    <table class="table table-dark table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Posición</th>
+                                <th>Usuario</th>
+                                <th>Puntos</th>
+                                <th>Logros Destacados</th>
+                                <th>Última peli vista</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Cazador De sombras</td>
+                                <td>1520</td>
+                                <td>Explorador de Criptas</td>
+                                <td>La mansión del terror</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Vampiro Diurno</td>
+                                <td>1450</td>
+                                <td>Cazafantasmas</td>
+                                <td>Pesadilla en Elm Street</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ghost Seeker</td>
+                                <td>1335</td>
+                                <td>Sobreviviente Slasher</td>
+                                <td>Bosque Siniestro </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Bruja Sabia</td>
+                                <td>1300</td>
+                                <td>Historiador del Horror</td>
+                                <td>Chucky</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Sombra Nocturna</td>
+                                <td>1250</td>
+                                <td>Critico de Cuervos</td>
+                                <td>El amanecer de los muertos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="horror-herald container">
+            <div class="text-center my-5">
+                <h2 class="c-gris text-center display-5 fw-semibold  my-5">Horror Herald</h2>
+            </div>
+            <!--Inicio Row-->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-5 shadow-sm">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Final Row-->
+
+        </div>
+
+    </main>
+
+    <footer class="bg-negro container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo"></div>
+                <div class="footer-section"></div>
+                <div class="footer-redes"></div>
+            </div>
+        </div>
+    </footer>
+    <!--Bootsrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

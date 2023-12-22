@@ -1,0 +1,154 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/** Inicio CSS para el navbar **/
+.navbar {
+    background-color: #0D0D0D;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #F23D5E;
+    font-size: 24px;
+    transition: 0.3s color #93052b;
+}
+
+.inicio.nav {
+    color: #93052b;
+}
+
+.login-button {
+    background-color: #F23D5E;
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #93052b;
+}
+
+.navbar-togger {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-togger:focus .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #F23D6D;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #93052b;
+}
+
+@media (min-width: 991mx) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #93052b;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+
+    }
+}
+
+/** Final CSS Navbar**/
+
+/** Seccion de reglas que se aplican a varios elementos**/
+/** Este color Rosa es para contraste en las fuentes y titulos**/
+.c-rosa {
+    color: #F23D6D;
+}
+
+.bg-negro{
+    color: #0D0D0D;
+}
+.c-white {
+    color: whitesmoke;
+}
+
+.bd-beige {
+    background-color: #F2DFD8;
+}
+
+/** Este gris es para fuentes **/
+.c-gris {
+    color: #392E40;
+}
+
+.c-main-titles {
+    color: #F23D6D;
+}
+
+.preguntas-puntos {
+    background-color: #F23D6D;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.btn-negro {
+    background-color: #0D0D0D;
+    border: #0D0D0D 1px solid;
+    color: antiquewhite;
+    border-radius: 16px;
+
+}
+
+.btn-negro:hover {
+    background-color: whitesmoke;
+    border-color: #F23D5E;
+    color: #F23D5E;
+    border-radius: 16px;
+
+}
+
+.card {
+    border-radius: 16px;
+}
+
+/** CSS de Especificos seccion Carrusel|seccion Inicio| **/
+
+
+.carouselExampleCaptions .carousel-item img {
+    width: 100%;
+    min-height: 600px;
+    object-fit: cover;
+
+}
+
+
+
+
+/** CSS de Especificos seccion Mejor Calificados |seccion Inicio| **/
+
+.card img {
+    height: 250px;
+}
