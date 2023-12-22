@@ -7,8 +7,8 @@
     <!--Bootsrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<!--Bootsrap Iconos-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--Bootsrap Iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Fright Folio</title>
 </head>
@@ -34,8 +34,8 @@
                             <a class="nav-link mx-lg-2" aria-current="page" href="micripta.html">Mi cripta</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" aria-current="page"
-                                    href="peliculasyseries.html">Peliculas Y Series</a>
+                                <a class="nav-link mx-lg-2" aria-current="page" href="peliculasyseries.html">Peliculas Y
+                                    Series</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2" href="misiones.html">Misiones</a>
@@ -56,12 +56,159 @@
         <!-- Navbar END-->
     </header>
 
-
-
     <h1>mis series</h1>
+
+    <!--Las 3 favoritas en imagen y dentro de la tabla y las otras solo en la tabla con la informacion del usuario -->
+    <i class="fa-solid fa-image"></i>
+    <i class="fa-solid fa-image"></i>
+    <i class="fa-solid fa-image"></i>
+    <br>
+    <i class="fa-solid fa-table"></i>
     <h2>ecos del terror </h2>
     <h2>cronograma</h2>
     <h2>Agendar Serie</h2>
+
+    <section>
+        <h2>Ecos del terror</h2>
+
+        <h3>Género Favorito</h3>
+        <p>Slasher</p>
+        <p>Vampiros</p>
+        <p>Zombies</p>
+
+        <h3>Desafios Completados</h3>
+        <p>Maraton Peliculas Vampiros</p>
+        <p>Saga Saw</p>
+
+        <h3>Top 3 Series</h3>
+        <p>The Last of Us
+        <p>
+        <p>Lovecraft Country</p>
+        <p>The Sandman</p>
+
+    </section>
+
+    <section>
+
+        <h2>Cronograma</h2>
+        <!--Aqui se vera el calendario con las series programadas y en seguimiento del usuario -->
+
+        <i class="fa-regular fa-calendar-days"></i>
+
+        <hr>
+        <form action="">
+
+            <h2>Agendar Serie</h2>
+            <div>
+                <label for="Nombre de la Serie">Nombre de la serie</label>
+                <input type="text" id="nombre-serie">
+            </div>
+
+            <div>
+                <label for="Fecha">Asignar Fecha</label>
+                <input type="date" id="fecha-ver-serie">
+
+                <h4>Recurrencia</h4>
+                <label for="text">Diario</label>
+                <input type="radio" id="recurrencia-diaria" name="opcion">
+                <br>
+
+                <label for="text">Semanal</label>
+                <input type="radio" id="recurrencia-semanal" name="opcion">
+                <br>
+
+                <label for="text">Sin Recurrencia</label>
+                <input type="radio" id="sin-recurrencia" name="opcion">
+
+                <br>
+                <h4>Agregar nota</h4>
+                <textarea name="" id="nota-de-usuario" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Reiniciar">
+                <input type="submit" value="Guardar">
+
+            </div>
+
+        </form>
+    </section>
+
+    <section>
+        <form action="">
+            <hr>
+            <h2>Actualizar información de Serie o Pelicula</h2>
+            <h3>Mis Series</h3>
+            <p>Selecciona la serie que quieres calificar</p>
+            <p>En esta sección tambien puedes actualizar el capitulo y temporada que ya has visto</p>
+            <p>Y que tal si te animas a compartir una Reseña </p>
+
+         
+                <p>The Last of Us</p>
+                <p>Lovecraft Country</p>
+                <p>The Sandman</p>
+                <p>Love Dead & Robots</p>
+                <ul>
+                    <li>Temporada 1</li>
+                    <li>Temporada 2</li>
+                    <li>Temporada 3</li>
+                </ul>
+                <p>Stranger Things</p>
+                <ul>
+                    <li>Temporada 1</li>
+                    <li>Temporada 2</li>
+                    <li>Temporada 3</li>
+                </ul>
+            
+
+        </form>
+
+
+        <h3>Actualizar Datos Serie: Stranger Things</h3>
+            <form action="">
+                <img src="/img/stranger_things.png" alt="poster_stranger_things">
+                <!--Inserta la imagen referencia de la serie que el usuario selecciono para editar-->
+
+
+                <div>
+                    <h3>Stranger Things</h3>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star-half-stroke"></i>
+                    <div>
+                        <label for="calificacion-serie">Califica esta Serie</label>
+                        <select name="" id="calificacion-serie">
+                            <option value="">1 Estrella</option>
+                            <option value="">2 Estrellas</option>
+                            <option value="">3 Estrellas</option>
+                            <option value="">4 Estrellas</option>
+                            <option value="">5 Estrellas</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="seleccion-temporada">¿En Que temporada vas ?</label>
+                        <select name="" id="seleccion-temporada">
+                            <option value="">Temporada 1</option>
+                            <option value="">Temporada 2</option>
+                            <option value="">Temporada 3</option>
+                            <option value="">Terminada</option>
+                            <option value="">Abandonada 3</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h4>Reseña</h4>
+                        <textarea name="" id="resena-de-usuario" cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="Guardar">
+                    </div>
+                </div>
+            </form>
+
+
+        </section>
+
+    </main>
+    <hr>
+
 
     <section class="preguntas-puntos">
         <h2 class="c-gris text-center my-5">Preguntas Frecuentes</h2>
@@ -105,7 +252,8 @@
                 </div>
                 <div class="footer-sections my-3 d-flex flex-column align-items-center col-lg-3 fs-3">
                     <a class="nav-link mx-lg-2" aria-current="page" href="./micripta.html">Mi cripta</a>
-                    <a class="nav-link mx-lg-2" aria-current="page" href="./peliculasyseries.html">Peliculas Y Series</a>
+                    <a class="nav-link mx-lg-2" aria-current="page" href="./peliculasyseries.html">Peliculas Y
+                        Series</a>
                     <a class="nav-link mx-lg-2" aria-current="page" href="./misiones.html">Misiones</a>
                 </div>
 
