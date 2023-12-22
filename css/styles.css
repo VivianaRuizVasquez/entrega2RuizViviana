@@ -145,10 +145,20 @@
 }
 
 
-
-
 /** CSS de Especificos seccion Mejor Calificados |seccion Inicio| **/
 
 .card img {
     height: 250px;
 }
+
+/** CSS de Especificos seccion footer |seccion Inicio| **/
+
+.btn-crimsom {
+    background-color: #93052b;
+    border: #93052b 2px solid;
+    color: antiquewhite;
+}
+
+/** CSS LOGIN |seccion LOGIN| **/
+
+
