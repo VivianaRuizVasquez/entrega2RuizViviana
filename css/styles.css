@@ -187,7 +187,35 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
+
+/** Seccion |Horror Herald| **/
+.card-horror-herald{
+margin: 10px;
+background-color: #f2f2f2;
+border-radius: 16px;
+overflow: hidden;
+height: 500px;
+margin-top: 30px;
+padding-inline: 50px;
+box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-horror-herald img {
+    height: 250px;
+}
+
+.img-fluid {
+    height: 300px;
+}
+.badge{
+border-radius: 50px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+/** Seccion |Horror Herald| **/
 
 .divider-content-center{
     position:absolute;

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/1d67b26f86.js" crossorigin="anonymous"></script>
     <!--Bootsrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -152,7 +153,7 @@
 
                     <div class="col-lg-4 col-md-3 col-sm-12">
                         <div class="card mb-5 shadow-sm">
-                            <img src="./img/Sweet-Home-5.jpg" class="card-img-fluid" alt="...">
+                            <img src="./img/Sweet-Home-5.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                                 <div class="card-title">
                                     <h5 class="top-rated-card-title c-rosa"> Sweet Home</h5>
@@ -171,12 +172,7 @@
             </div>
         </section>
 
-        <!--
-    Para hacer un boton el profe hizo 
-    <div> class="d-flex justify-content-center justify-content-lg-start">
-    <a href="" class="btn btn-lg btn-lila><a>"
-    </div>
--->
+        <!-- -->
 
         <section class="container maestros-del-terror">
             <div class="row">
@@ -234,22 +230,72 @@
             </div>
         </section>
 
-
-        <div class="horror-herald container">
-            <div class="text-center my-5">
-                <h2 class="c-gris text-center display-5 fw-semibold  my-5">Horror Herald</h2>
-            </div>
-            <!--Inicio Row-->
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card mb-5 shadow-sm">
-
+        <!-- Seccion de Noticias -->
+        <div class="horror-herald-container mt-5">
+            <h1 class="c-gris text-center display-5 fw-semibold my-5">Horror Herald</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                <div class="col">
+                    <div class="card-horror-herald">
+                        <img src="./img/talk-tm.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <span class="badge bg-primary">Popular</span>
+                            <h5 class="card-title">Talk to me </h5>
+                            <p class="card-text">Una joya del terror independiente, que merece ser vista y aplaudida por
+                                los amantes del cine de calidad. Es una película que te hará pasar un mal rato, pero
+                                también te hará pensar y sentir. Es una película que te hará hablar.</p>
+                            <span>
+                                <p>Calificación Reseñas de Usuarios</p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
                     </div>
-
                 </div>
-
+                <div class="col">
+                    <div class="card-horror-herald">
+                        <img src="./img/terrifier.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <span class="badge bg-success">Peliculas</span>
+                            <h5 class="card-title">Terrifier</h5>
+                            <p class="card-text">El diseño de producción y los efectos gore son maravillosamente
+                                salvajes, y hay una sed de sangre que difícilmente se encuentra en otros films de terror
+                                actuales".</p>
+                            <span>
+                                <p>Calificación Reseñas de Usuarios</p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-horror-herald">
+                        <img src="./img/Junji.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <span class="badge bg-danger">Series</span>
+                            <h5 class="card-title">Junji Ito</h5>
+                            <p class="card-text">Doce capitulos macabros, retorcidos que te harán apretar los dientes y
+                                prender la luz. Ideal para una noche de Sábado en casa.</p>
+                            <span>
+                                <p>Calificación Reseñas de Usuarios</p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--Final Row-->
+        </div>
+        <!--Final Seccion de Noticias-->
 
         </div>
 
@@ -269,7 +315,8 @@
                 </div>
                 <div class="footer-sections my-3 d-flex flex-column align-items-center col-lg-3 fs-3">
                     <a class="nav-link mx-lg-2" aria-current="page" href="./pages/micripta.html">Mi cripta</a>
-                    <a class="nav-link mx-lg-2" aria-current="page" href="./pages/peliculasyseries.html">Peliculas Y Series</a>
+                    <a class="nav-link mx-lg-2" aria-current="page" href="./pages/peliculasyseries.html">Peliculas Y
+                        Series</a>
                     <a class="nav-link mx-lg-2" aria-current="page" href="./pages/misiones.html">Misiones</a>
                 </div>
 
@@ -289,6 +336,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+
 
 </body>
 
