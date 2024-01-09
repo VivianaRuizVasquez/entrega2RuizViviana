@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/1d67b26f86.js" crossorigin="anonymous"></script>
     <!--Bootsrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Bootsrap Iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="../css/styles.css">
     <title>Fright Folio</title>
 </head>
 
 <body>
-
     <header>
         <!-- Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand me-auto" href="#">FrightFolio</a>
+                <a class="navbar-brand me-auto" href="../index.html">FrightFolio</a>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -29,24 +30,21 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2 active" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link mx-lg-2" aria-current="page" href="../index.html">Inicio</a>
                             </li>
-                            <a class="nav-link mx-lg-2" aria-current="page" href="micripta.html">Mi cripta</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" aria-current="page" href="peliculasyseries.html">Peliculas Y
-                                    Series</a>
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Mi cripta</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="misiones.html">Misiones</a>
+                                <a class="nav-link mx-lg-2" aria-current="page"
+                                    href="./peliculasyseries.html">Peliculas Y Series</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="login.html">Login</a>
+                                <a class="nav-link mx-lg-2" href="./misiones.html">Misiones</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="login-button">Login</a>
+                <a href="./login.html" class="login-button">Login</a>
                 <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,187 +54,333 @@
         <!-- Navbar END-->
     </header>
 
-    <h1>mis series</h1>
 
-    <!--Las 3 favoritas en imagen y dentro de la tabla y las otras solo en la tabla con la informacion del usuario -->
-    <i class="fa-solid fa-image"></i>
-    <i class="fa-solid fa-image"></i>
-    <i class="fa-solid fa-image"></i>
-    <br>
-    <i class="fa-solid fa-table"></i>
-    <h2>ecos del terror </h2>
-    <h2>cronograma</h2>
-    <h2>Agendar Serie</h2>
+    <main>
+<!-- slider chingon -->
 
-    <section>
-        <h2>Ecos del terror</h2>
-
-        <h3>Género Favorito</h3>
-        <p>Slasher</p>
-        <p>Vampiros</p>
-        <p>Zombies</p>
-
-        <h3>Desafios Completados</h3>
-        <p>Maraton Peliculas Vampiros</p>
-        <p>Saga Saw</p>
-
-        <h3>Top 3 Series</h3>
-        <p>The Last of Us
-        <p>
-        <p>Lovecraft Country</p>
-        <p>The Sandman</p>
-
-    </section>
-
-    <section>
-
-        <h2>Cronograma</h2>
-        <!--Aqui se vera el calendario con las series programadas y en seguimiento del usuario -->
-
-        <i class="fa-regular fa-calendar-days"></i>
-
-        <hr>
-        <form action="">
-
-            <h2>Agendar Serie</h2>
-            <div>
-                <label for="Nombre de la Serie">Nombre de la serie</label>
-                <input type="text" id="nombre-serie">
-            </div>
-
-            <div>
-                <label for="Fecha">Asignar Fecha</label>
-                <input type="date" id="fecha-ver-serie">
-
-                <h4>Recurrencia</h4>
-                <label for="text">Diario</label>
-                <input type="radio" id="recurrencia-diaria" name="opcion">
-                <br>
-
-                <label for="text">Semanal</label>
-                <input type="radio" id="recurrencia-semanal" name="opcion">
-                <br>
-
-                <label for="text">Sin Recurrencia</label>
-                <input type="radio" id="sin-recurrencia" name="opcion">
-
-                <br>
-                <h4>Agregar nota</h4>
-                <textarea name="" id="nota-de-usuario" cols="30" rows="10"></textarea>
-                <br>
-                <input type="submit" value="Reiniciar">
-                <input type="submit" value="Guardar">
-
-            </div>
-
-        </form>
-    </section>
-
-    <section>
-        <form action="">
-            <hr>
-            <h2>Actualizar información de Serie o Pelicula</h2>
-            <h3>Mis Series</h3>
-            <p>Selecciona la serie que quieres calificar</p>
-            <p>En esta sección tambien puedes actualizar el capitulo y temporada que ya has visto</p>
-            <p>Y que tal si te animas a compartir una Reseña </p>
-
-         
-                <p>The Last of Us</p>
-                <p>Lovecraft Country</p>
-                <p>The Sandman</p>
-                <p>Love Dead & Robots</p>
-                <ul>
-                    <li>Temporada 1</li>
-                    <li>Temporada 2</li>
-                    <li>Temporada 3</li>
-                </ul>
-                <p>Stranger Things</p>
-                <ul>
-                    <li>Temporada 1</li>
-                    <li>Temporada 2</li>
-                    <li>Temporada 3</li>
-                </ul>
-            
-
-        </form>
-
-
-        <h3>Actualizar Datos Serie: Stranger Things</h3>
-            <form action="">
-                <img src="/img/stranger_things.png" alt="poster_stranger_things">
-                <!--Inserta la imagen referencia de la serie que el usuario selecciono para editar-->
-
-
-                <div>
-                    <h3>Stranger Things</h3>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star-half-stroke"></i>
-                    <div>
-                        <label for="calificacion-serie">Califica esta Serie</label>
-                        <select name="" id="calificacion-serie">
-                            <option value="">1 Estrella</option>
-                            <option value="">2 Estrellas</option>
-                            <option value="">3 Estrellas</option>
-                            <option value="">4 Estrellas</option>
-                            <option value="">5 Estrellas</option>
-                        </select>
+        <section class="carouselExampleCaptions d-flex justify-content-center w-lg-75">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/barranco.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-center text-lg-center display-2 fw-semibold c-main-titles">En FrightFolio
+                                Podrás
+                            </h1>
+                            <p class="text-center text-lg-center">Llevar un registro de todas las peliculas que has
+                                visto.</p>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="seleccion-temporada">¿En Que temporada vas ?</label>
-                        <select name="" id="seleccion-temporada">
-                            <option value="">Temporada 1</option>
-                            <option value="">Temporada 2</option>
-                            <option value="">Temporada 3</option>
-                            <option value="">Terminada</option>
-                            <option value="">Abandonada 3</option>
-                        </select>
+                    <div class="carousel-item">
+                        <img src="../img/casaarruinada.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-center text-lg-center display-2 fw-semibold c-main-titles">En FrightFolio
+                                Podrás
+                            </h2>
+                            <p class="text-center text-lg-center"> Muestra todo el amor por tus peliculas, listas y
+                                reseñas
+                                favoritas con un <span class="c-rosa">"Me Gusta"</span></p>
+                        </div>
                     </div>
-
-                    <div>
-                        <h4>Reseña</h4>
-                        <textarea name="" id="resena-de-usuario" cols="30" rows="10"></textarea>
-                        <br>
-                        <input type="submit" value="Guardar">
+                    <div class="carousel-item">
+                        <img src="../img/arbol.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-center text-lg-center display-2 fw-semibold c-main-titles">En FrightFolio
+                                Podrás
+                            </h2>
+                            <p class="text-center text-lg-center">Califica cada pelicula en una escala de una a cinco
+                                estrellas para
+                                registrar y compartir tu opinión.</p>
+                        </div>
                     </div>
                 </div>
-            </form>
-
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions "
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions "
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+<!--  tabla de mamadas -->
+        <section class="maestros-del-terror separacion">
+            <div class="row">
+                <h1 class="c-gris text-center display-5 fw-semibold  my-5">Mis series</h1>
+                <div class="col">
+                    <table class="table table-dark table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Posición</th>
+                                <th>Usuario</th>
+                                <th>Puntos</th>
+                                <th>Logros Destacados</th>
+                                <th>Última peli vista</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Cazador De sombras</td>
+                                <td>1520</td>
+                                <td>Explorador de Criptas</td>
+                                <td>La mansión del terror</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Vampiro Diurno</td>
+                                <td>1450</td>
+                                <td>Cazafantasmas</td>
+                                <td>Pesadilla en Elm Street</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ghost Seeker</td>
+                                <td>1335</td>
+                                <td>Sobreviviente Slasher</td>
+                                <td>Bosque Siniestro </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Bruja Sabia</td>
+                                <td>1300</td>
+                                <td>Historiador del Horror</td>
+                                <td>Chucky</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Sombra Nocturna</td>
+                                <td>1250</td>
+                                <td>Critico de Cuervos</td>
+                                <td>El amanecer de los muertos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
+        <section class="flex-wrap-resposive separacion">
+            <h1 class="title"> Ecos del terror</h1>
+                <article class="article">
+                    <dl>
+                        <dt class="sub-title">Géneros favoritos</dt>
+                        <dd class="flex-wrap-resposive">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </article>
+                <article class="article">
+                    <dl>
+                        <dt class="sub-title">Géneros favoritos</dt>
+                        <dd class="flex-wrap-resposive">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </article>
+                <article class="article">
+                    <dl>
+                        <dt class="sub-title">Géneros favoritos</dt>
+                        <dd class="flex-wrap-resposive">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </article>
+                <article class="article">
+                    <dl>
+                        <dt class="sub-title">Géneros favoritos</dt>
+                        <dd class="flex-wrap-resposive">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </article>
+        </section>
+
+
+
+        <section class="separacion">
+            <!--Aqui se vera el calendario con las series programadas y en seguimiento del usuario -->
+            <h1 class="title">Cronograma <i class="fa-regular fa-calendar-days"></i></h1>            
+            <form action="" class="form-series">
+                <fieldset class="fieldset-1">
+                    <table id="calendar">
+                        <thead>
+                            <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                </fieldset>
+
+                <fieldset class="fielData">
+                    <legend class="sub-title">Agendar Serie</legend>
+                    <label for="nombre-serie">Nombre de la serie</label>
+                    <input type="text" id="nombre-serie">
+
+                    <legend class="sub-title">Recurrencia</legend>
+                    <label for="recurrencia-diaria">Diario</label>
+                    <input type="radio" id="recurrencia-diaria" name="opcion">
+
+                    <label for="recurrencia-semanal">Semanal</label>
+                    <input type="radio" id="recurrencia-semanal" name="opcion">
+
+                    <label for="sin-recurrencia">Sin Recurrencia</label>
+                    <input type="radio" id="sin-recurrencia" name="opcion">
+
+                    <label for="calificacion">Mensaje:</label><br>
+                    <textarea id="calificacion" name="califica" rows="4" cols="40">
+                        Escribe tu mensaje aquí...
+                    </textarea>
+                    
+                    <input type="submit" value="Guardar">
+                    <input type="submit" value="Reiniciar">
+                </fieldset>
+
+            </form>
+        </section>
+        <section class="misFavoritos separacion">
+            <article class="mis-series">
+                <h2 class="sub-title">Mis series</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+            <article class="serieActual">
+                <h2 class="sub-title">Actualizar series </h2>
+                <img src="../img/Sweet-Home-5.jpg" alt="">
+                <div>
+                    <p>calificacion</p>
+                    <span>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <label for="movie">Name movies</label>
+                    <select name="movies" id="movie">
+                      <option value="javascript">JavaScript</option>
+                      <option value="php">PHP</option>
+                      <option value="java">Java</option>
+                      <option value="golang">Golang</option>
+                      <option value="python">Python</option>
+                      <option value="c#">C#</option>
+                      <option value="C++">C++</option>
+                      <option value="erlang">Erlang</option>
+                    </select>
+
+                    <label for="comentario-usuario">Nuevo comentario</label>
+                    <textarea id="comentario-usuario" name="mensaje" rows="4" cols="50">
+                        Escribe tu mensaje aquí...
+                    </textarea>
+                </div>
+            </article>
+        </section>
+
+
+
     </main>
-    <hr>
-
-
-    <section class="preguntas-puntos">
-        <h2 class="c-gris text-center my-5">Preguntas Frecuentes</h2>
-        <div class="container"></div>
-        <div class="row">
-            <div class="col-lg-4">
-                <h5>¿PARA QUÉ SIRVEN LOS PUNTOS?</h5>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eum iusto asperiores beatae
-                    voluptatum minus vero aliquid expedita necessitatibus omnis atque cumque quidem fugit aliquam
-                    dolorem aut ipsam, quo quae.</P>
-            </div>
-            <div class="col-lg-4">
-                <h5>¿CÓMO REDIMIR LOS PUNTOS?</h5>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eum iusto asperiores beatae
-                    voluptatum minus vero aliquid expedita necessitatibus omnis atque cumque quidem fugit aliquam
-                    dolorem aut ipsam, quo quae.</P>
-            </div>
-            <div class="col-lg-4">
-                <h5>OTRAS PREGUNTAS</h5>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eum iusto asperiores beatae
-                    voluptatum minus vero aliquid expedita necessitatibus omnis atque cumque quidem fugit aliquam
-                    dolorem aut ipsam, quo quae.</P>
-            </div>
-
-        </div>
-
-
-    </section>
 
     <footer class="bg-dark c-rosa container-fluid p-2">
         <div class="container">
@@ -251,10 +395,9 @@
                     </form>
                 </div>
                 <div class="footer-sections my-3 d-flex flex-column align-items-center col-lg-3 fs-3">
-                    <a class="nav-link mx-lg-2" aria-current="page" href="./micripta.html">Mi cripta</a>
-                    <a class="nav-link mx-lg-2" aria-current="page" href="./peliculasyseries.html">Peliculas Y
-                        Series</a>
-                    <a class="nav-link mx-lg-2" aria-current="page" href="./misiones.html">Misiones</a>
+                    <a class="nav-link mx-lg-2" aria-current="page" href="./pages/micripta.html">Mi cripta</a>
+                    <a class="nav-link mx-lg-2" aria-current="page" href="./pages/peliculasyseries.html">Peliculas Y Series</a>
+                    <a class="nav-link mx-lg-2" aria-current="page" href="./pages/misiones.html">Misiones</a>
                 </div>
 
                 <div class="footer-redes my-3 d-flex flex-column align-items-center col-lg-3">
@@ -269,6 +412,11 @@
             </div>
         </div>
     </footer>
+    <!--Bootsrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

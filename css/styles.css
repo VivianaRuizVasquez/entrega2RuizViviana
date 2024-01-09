@@ -19,8 +19,8 @@
     transition: 0.3s color #93052b;
 }
 
-.inicio.nav {
-    color: #93052b;
+.btn-close{
+    --bs-btn-close-color: whitesmoke!important;
 }
 
 .login-button {
@@ -51,39 +51,38 @@
     color: #F23D6D;
     font-weight: 500;
     position: relative;
+    text-decoration: none;
 }
 
-.nav-link:hover,
-.nav-link:active {
+.nav-link:hover {
+    color: #93052b;
+    text-decoration: underline;
+    text-decoration-color:#93052b ;
+}
+.active{
+    color: #eee!important;
+}
+.offcanvas-body{
+    background-color: #0D0D0D;
+}
+
+.offcanvas-header{
+    background-color: #0D0D0D;
+}
+
+.offcanvas-title {
     color: #93052b;
 }
 
-@media (min-width: 991mx) {
-    .nav-link::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background-color: #93052b;
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-    }
 
-    .nav-link:hover::before,
-    .nav-link.active::before {
-        width: 100%;
-        visibility: visible;
-
-    }
-}
 
 /** Final CSS Navbar**/
 
 body{
     background: #F2DFD8;
+}
+.content{
+    margin-top: 200px;
 }
 
 /** Seccion de reglas que se aplican a varios elementos**/
@@ -212,4 +211,159 @@ body{
 
 .olvide-contraseña:hover{
     text-decoration: underline;
+}
+
+
+.form-series {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+
+.fielData{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+.w-full{
+    width: 100%;
+}
+
+
+.sub-title{
+    text-align: center;
+    font-weight: 700;
+}
+
+.article{
+    width: 25%!important;
+
+}
+
+.misFavoritos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mis-series{
+    width: 25%;
+    border-right: solid 2px #0D0D0D; 
+}
+
+
+.serieActual{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding-left: 10%;
+}
+.serieActual h2{
+    width: 100%;
+}
+
+.serieActual img{
+    width: 35%;
+    object-fit: cover;
+}
+.serieActual div{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset-1{
+    width: 60%;
+    padding: 0 15px;
+}
+.fieldset-2{
+    width: 40%;
+}
+
+.container{
+    padding-top: 200px;
+}
+
+
+
+/*estilos calendario*/
+
+#calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#calendar th,
+#calendar td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#calendar th {
+    background-color: #f2f2f2;
+}
+
+#calendar tbody tr:nth-child(odd) td {
+    background-color: #e6e6e6;
+}
+
+#calendar tbody tr:hover td {
+    background-color: #d9d9d9;
+}
+
+
+.separacion{
+    margin: 10% 0;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #93052b;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+
+    }
+
+    .article{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px), (max-width:1024) {
+    .article{
+        width: 50%;
+    }
 }
