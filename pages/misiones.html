@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/1d67b26f86.js" crossorigin="anonymous"></script>
     <!--Bootsrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -52,33 +53,69 @@
     </header>
 
     <main>
+        <!--Misiones -->
         <div class="content">
-            <h1>Misiones</h1>
-            <p>Aqui ira una imagen de fondo alusiva a la mision y medalla de la semana/mes</p>
-        </div>
-        <div>
-            <i class="fa-solid fa-circle-user"></i>
-
-            <h2>Jason_1980</h2>
-            <ul>
-                <li>Puntos:666</li>
-                <li>Cazafantasmas</li>
-                <li>Ranking 123</li>
-            </ul>
+            <h1 class="title c-gris">Misiones Del Mes</h1>
         </div>
 
-        <div>
-            <h2>Medallas</h2>
-            <i class="bi bi-award"></i>
-            <i class="bi bi-binoculars"></i>
-            <i class="bi bi-trophy"></i>
+        <!-- Fin Misiones -->
 
+        <!--Perfil  -->
+        <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <img src="../img/Jason_profile.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Jason_1980</h5>
+                <ul>
+                    <li>Puntos:666</li>
+                    <li>Cazafantasmas</li>
+                    <li>Ranking 365</li>
+                </ul>
+            </div>
         </div>
+        <!-- Fin Perfil  -->
+
+        <!--Medallas  -->
+        <div class="card-group">
+            <h2 class="c-gris title">Medallas</h2>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <i class="fa-solid fa-ghost"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Cazafantasmas</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Maraton Peliculas Vampiros</h5>
+                    <p class="card-text">Sumérgete en el oscuro mundo de los inmortales en 'Películas Vampiros'.
+                        Revisa y reseña las peliculas del mes.
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <i class="fa-solid fa-biohazard"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Zombie</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <!--Fin Medallas  -->
+
         <!--Inicio seccion ranking-->
-
         <section class="container miranking">
             <div class="row">
-                <h2 class="c-gris text-center display-5 fw-semibold  my-5">Mi Ranking</h2>
+                <h2 class="c-gris display-5 my-5 title">Mi Ranking</h2>
                 <div class="col">
                     <table class="table table-dark table-hover table-striped">
                         <thead>
@@ -94,7 +131,7 @@
                             <tr>
                                 <td>365</td>
                                 <td>Jason_1980</td>
-                                <td>759</td>
+                                <td>666</td>
                                 <td>Maraton Peliculas Vampiros</td>
                                 <td>Talk to me</td>
                             </tr>
@@ -133,8 +170,9 @@
         </section>
         <!--Final seccion ranking-->
 
+        <!--Inicio seccion Misiones Activas-->
         <section>
-            <h2>Misiones Activas</h2>
+            <h2 class="c-gris title">Misiones Activas</h2>
             <ul>
                 <i class="fa-solid fa-table"></i>
                 <br>
@@ -149,17 +187,54 @@
             </ul>
         </section>
 
+
         <section>
-            <h2>Maestros del terror </h2>
+
+            <div class="row card mb-5">
+                <div class="col-lg-5 col-md-4 col-sm-12">
+                    <div class="card mb-5 shadow-sm">
+                        <h2 class="c-rosa title display-5 my-5">Misiones Activas</h2>
+                        <img src="../img/sobreviviente_Slasher.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sobreviviente Slasher</h5>
+                            <p class="card-text">Enfréntate a los terrores nocturnos y sobrevive al suspenso. Califica 3
+                                Peliculas Slasher, comparte una reseña y vota en el rank.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 2 days ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card mb-5 shadow-sm">
+                        <h2 class="c-rosa title display-5 my-5">Misiones Completadas</h2>
+                        <img src="../img/cazador_vampiros.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Maraton Peliculas Vampiros</h5>
+                            <p class="card-text">Sumérgete en el oscuro mundo de los inmortales en 'Películas Vampiros'.
+                                Experimenta el encanto y el misterio de los vampiros a través de clásicos
+                                califica las peliculas de la lista y comparte tu reseña. </p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Final seccion Misiones Activas-->
+
+        <!--Inicio seccion Maestros del terror-->
+        <section>
+            <h2 class="c-gris title ">Maestros del terror </h2>
             <h3>Top Ranked</h3>
             <i class="fa-solid fa-table"></i>
         </section>
-        <hr>
-        <section>
-            <h2>Estrellas en Ascenso</h2>
-            <i class="fa-solid fa-table"></i>
+        <!--Final  seccion Maestros del terror-->
 
+
+        <!--Inicio seccion Estrellas en Ascenso-->
+        <section>
+            <h2 class="c-gris title">Estrellas en Ascenso</h2>
+            <i class="fa-solid fa-table"></i>
         </section>
+        <!--Final seccion Estrellas en Ascenso-->
+
+
         <section>
             <!--En esta seccion cuando habra una barra de scroll arriba/abajo para ver el texto y evitar que nos envie a otra seccion o pagina-->
             <h2>¿Para que Sirven los puntos?</h2>
@@ -179,7 +254,7 @@
         </section>
 
     </main>
-    <hr>
+
     <footer class="bg-dark c-rosa container-fluid p-2">
         <div class="container">
             <div class="row border-bottom p-2 d-lg-flex justify-content-between align-items-center">
