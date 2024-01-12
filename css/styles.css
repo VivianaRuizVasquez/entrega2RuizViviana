@@ -209,9 +209,9 @@ body {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card-body{
+/* .card-body{
     padding: 0 20px;
-}
+} */
 .img-fluid {
     height: 300px;
     width: 100%;
@@ -355,6 +355,52 @@ padding-top: 12vh;
     width: 20%;
 }
 
+@media screen and (max-width:480px) {
+    .echo{
+        flex-direction: column;
+    }  
+
+    .echo .card{
+        width: 100%;
+    }
+    
+    .form-series {
+        flex-direction: column;
+        align-content: baseline;
+        align-items: center;
+        padding: 0;
+    }
+    .fieldset-1 {
+        width: 90%;
+    }
+    .fielData {
+        width: 100%;
+    }
+
+    .misFavoritos {
+        flex-direction: column;
+    }
+    .mis-series {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 2px black;
+    }
+    .serieActual {
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .serieActual img {
+        width: 90%;
+        object-fit: contain
+    }
+
+    .serieActual div {
+        padding: 0;
+        width: 90%;
+    }
+}
+
 /*estilos calendario*/
 
 #calendar {
@@ -421,4 +467,115 @@ padding-top: 12vh;
     .article {
         width: 50%;
     }
+}
+
+
+
+
+.profile {
+    margin-top: 12vh;
+    padding: 15px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #0D0D0D;
+    align-items: center;
+
+}
+
+.miProfile {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: flex-end;
+    width: 20%;
+}
+
+.miProfile div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.miProfile img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.miProfile dl {
+    color: white;
+}
+
+.myRibbons {
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+}
+.myRibbons div{
+    width: 20%;
+    text-align: center;
+}
+
+.myRibbons div:hover{
+    border:solid 2px #eee
+}
+.myRibbons img{
+    width: 50%;
+
+}
+
+.myRibbons h5{
+   color: white;
+   text-align: center;
+}
+
+.pqr{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pqr div{
+    width: 70%;
+}
+.pqr summary{
+    font-size: 3rem;
+}
+.pqr details{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:768px) {
+    .profile {
+        flex-direction: column;
+    }
+    .miProfile {
+        width: 100%;
+    }
+
+    .miProfile div {
+        margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .myRibbons {
+        justify-content: center;
+    }
+
+    .myRibbons h5 {
+        font-size: 16px;
+    }
+    .myRibbons div:hover {
+        border: none;
+    }
+    
+}
+
+span.navbar-toggler-icon, .btn-close {
+    filter: invert(1);
+}
+
+
+.maestros-del-terror .col {
+    overflow-x: scroll;
 }
