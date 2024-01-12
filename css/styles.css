@@ -19,8 +19,8 @@
     transition: 0.3s color #93052b;
 }
 
-.btn-close{
-    --bs-btn-close-color: whitesmoke!important;
+.btn-close {
+    --bs-btn-close-color: whitesmoke !important;
 }
 
 .login-button {
@@ -57,16 +57,18 @@
 .nav-link:hover {
     color: #93052b;
     text-decoration: underline;
-    text-decoration-color:#93052b ;
+    text-decoration-color: #93052b;
 }
-.active{
-    color: #eee!important;
+
+.active {
+    color: #eee !important;
 }
-.offcanvas-body{
+
+.offcanvas-body {
     background-color: #0D0D0D;
 }
 
-.offcanvas-header{
+.offcanvas-header {
     background-color: #0D0D0D;
 }
 
@@ -74,14 +76,13 @@
     color: #93052b;
 }
 
-
-
 /** Final CSS Navbar**/
 
-body{
+body {
     background: #F2DFD8;
 }
-.content{
+
+.content {
     margin-top: 200px;
 }
 
@@ -91,9 +92,10 @@ body{
     color: #F23D6D;
 }
 
-.bg-negro{
+.bg-negro {
     color: #0D0D0D;
 }
+
 .c-white {
     color: whitesmoke;
 }
@@ -133,9 +135,15 @@ body{
 
 }
 
-.card {
+.card p, .card-horror-herald p {
     border-radius: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
 }
+
 
 /** CSS de Especificos seccion Carrusel|seccion Inicio| **/
 
@@ -172,13 +180,14 @@ body{
 .btn-login-social i {
     vertical-align: text-top;
 }
-.btn-outline-custom:hover{
+
+.btn-outline-custom:hover {
     color: #31374a;
     border-color: #eee;
     background-color: #eee;
 }
 
-.bg-holder{
+.bg-holder {
     position: absolute;
     width: 100%;
     min-height: 100%;
@@ -187,43 +196,44 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
 
 /** Seccion |Horror Herald| **/
-.card-horror-herald{
-margin: 10px;
-background-color: #f2f2f2;
-border-radius: 16px;
-overflow: hidden;
-height: 500px;
-margin-top: 30px;
-padding-inline: 50px;
-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+.card-horror-herald {
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card-horror-herald img {
-    height: 250px;
+.card-body{
+    padding: 0 20px;
 }
-
 .img-fluid {
     height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
-.badge{
-border-radius: 50px;
-margin-top: 10px;
-margin-bottom: 10px;
+
+.badge {
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-position: center;
 }
 
 /** Seccion |Horror Herald| **/
 
-.divider-content-center{
-    position:absolute;
-    top:50%;
-    left:50%;
+.divider-content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding-left: 0.5rem;
-    background-color:#F2DFD8;
+    background-color: #F2DFD8;
     font-size: 0.8rem;
     font-weight: 500%;
     color: #392E40;
@@ -237,7 +247,7 @@ margin-bottom: 10px;
     text-decoration: none;
 }
 
-.olvide-contraseña:hover{
+.olvide-contraseña:hover {
     text-decoration: underline;
 }
 
@@ -251,7 +261,7 @@ margin-bottom: 10px;
 }
 
 
-.fielData{
+.fielData {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -260,27 +270,27 @@ margin-bottom: 10px;
 }
 
 .flex-col {
-flex-direction: column;
+    flex-direction: column;
 }
 
-.title{
+.title {
     text-align: center;
     font-weight: bold;
     width: 100%
 }
 
-.w-full{
+.w-full {
     width: 100%;
 }
 
 
-.sub-title{
+.sub-title {
     text-align: center;
     font-weight: 700;
 }
 
-.article{
-    width: 25%!important;
+.article {
+    width: 25% !important;
 
 }
 
@@ -288,43 +298,52 @@ flex-direction: column;
     display: flex;
     flex-wrap: wrap;
 }
-.mis-series{
+
+.mis-series {
     width: 25%;
-    border-right: solid 2px #0D0D0D; 
+    border-right: solid 2px #0D0D0D;
 }
 
 
-.serieActual{
+.serieActual {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
     padding-left: 10%;
 }
-.serieActual h2{
+
+.serieActual h2 {
     width: 100%;
 }
 
-.serieActual img{
+.serieActual img {
     width: 35%;
     object-fit: cover;
 }
-.serieActual div{
+
+.serieActual div {
     padding: 5px;
     display: flex;
     flex-direction: column;
 }
 
-.fieldset-1{
+.fieldset-1 {
     width: 60%;
     padding: 0 15px;
 }
-.fieldset-2{
+
+.fieldset-2 {
     width: 40%;
 }
 
-.container{
-    padding-top: 200px;
+.container {
+    padding-top: 6vh;
+
 }
+
+.nuevos-lanzamientos {
+padding-top: 12vh;
+}*
 
 
 
@@ -355,7 +374,7 @@ flex-direction: column;
 }
 
 
-.separacion{
+.separacion {
     margin: 10% 0;
 }
 
@@ -384,13 +403,14 @@ flex-direction: column;
 
     }
 
-    .article{
+    .article {
         width: 90%;
     }
 }
 
-@media screen and (min-width: 769px), (max-width:1024) {
-    .article{
+@media screen and (min-width: 769px),
+(max-width:1024) {
+    .article {
         width: 50%;
     }
 }
