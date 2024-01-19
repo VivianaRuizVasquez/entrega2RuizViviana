@@ -1,0 +1,71 @@
+.navbar {
+    background-color: #0D0D0D;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+    &-brand {
+        font-weight: 500;
+        color: #F23D5E;
+        font-size: 24px;
+        transition: 0.3s color #93052b;
+
+        &-togger {
+            border: none;
+            font-size: 1.25rem;
+        }
+
+        &-togger:focus .btn-close:focus {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+}
+
+.btn-close {
+    --bs-btn-close-color: whitesmoke !important;
+}
+
+.login-button {
+    background-color: #F23D5E;
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+
+    &.login-button:hover {
+        background-color: #93052b;
+    }
+}
+
+.nav-link {
+    color: #F23D6D;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+
+    &.nav-link:hover {
+        color: #93052b;
+        text-decoration: underline;
+        text-decoration-color: #93052b;
+    }
+}
+
+.active {
+    color: #eee !important;
+}
+
+.offcanvas-body {
+    background-color: #0D0D0D;
+
+    &-header {
+        background-color: #0D0D0D;
+    }
+
+    &-title {
+        color: #93052b;
+    }
+}
