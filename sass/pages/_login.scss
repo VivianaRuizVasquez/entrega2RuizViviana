@@ -1,0 +1,27 @@
+.btn-login-social {
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    & i {
+        vertical-align: text-top;
+    }
+}
+
+
+.btn-outline-custom:hover {
+    color: #31374a;
+    border-color: #eee;
+    background-color: #eee;
+}
+
+.bg-holder {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
