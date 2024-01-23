@@ -1,0 +1,144 @@
+/** Seccion Mi Cripta| **/
+
+.misFavoritos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mis-series {
+    width: 25%;
+    border-right: solid 2px #0D0D0D;
+}
+
+.serieActual {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding-left: 10%;
+}
+
+.serieActual h2 {
+    width: 100%;
+}
+
+.serieActual img {
+    width: 35%;
+    object-fit: cover;
+}
+
+.serieActual div {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.sub-title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.article {
+    width: 25% !important;
+
+}
+
+.fieldset-1 {
+    width: 60%;
+    padding: 0 15px;
+}
+
+.fieldset-2 {
+    width: 40%;
+}
+
+@media screen and (max-width:480px) {
+    .echo {
+        flex-direction: column;
+    }
+
+    .echo .card {
+        width: 100%;
+    }
+
+    .form-series {
+        flex-direction: column;
+        align-content: baseline;
+        align-items: center;
+        padding: 0;
+    }
+
+    .fieldset-1 {
+        width: 90%;
+    }
+
+    .fielData {
+        width: 100%;
+    }
+
+    .misFavoritos {
+        flex-direction: column;
+    }
+
+    .mis-series {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 2px black;
+    }
+
+    .serieActual {
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .serieActual img {
+        width: 90%;
+        object-fit: contain
+    }
+
+    .serieActual div {
+        padding: 0;
+        width: 90%;
+    }
+}
+
+/*estilos calendario*/
+#calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#calendar th,
+#calendar td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#calendar th {
+    background-color: #f2f2f2;
+}
+
+#calendar tbody tr:nth-child(odd) td {
+    background-color: #e6e6e6;
+}
+
+#calendar tbody tr:hover td {
+    background-color: #d9d9d9;
+}
+
+.article {
+    width: 90%;
+}
+   /**Final Seccion Mi Cripta| **/
+
+@media screen and (min-width: 769px),
+(max-width:1024) {
+    .article {
+        width: 50%;
+    }
+}

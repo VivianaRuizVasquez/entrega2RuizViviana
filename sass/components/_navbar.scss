@@ -1,71 +1,101 @@
+/** Inicio CSS para el navbar **/
 .navbar {
     background-color: #0D0D0D;
     height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
+}
 
-    &-brand {
-        font-weight: 500;
-        color: #F23D5E;
-        font-size: 24px;
-        transition: 0.3s color #93052b;
-
-        &-togger {
-            border: none;
-            font-size: 1.25rem;
-        }
-
-        &-togger:focus .btn-close:focus {
-            box-shadow: none;
-            outline: none;
-        }
-    }
+.navbar-brand {
+    font-weight: 500;
+    color: #F23D5E;
+    font-size: 24px;
+    transition: 0.3s color #93052b;
 }
 
 .btn-close {
-    --bs-btn-close-color: whitesmoke !important;
+    --bs-btn-close-color:$c-whitesmoke !important;
 }
 
 .login-button {
     background-color: #F23D5E;
-    color: whitesmoke;
+    color: $c-whitesmoke;
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s background-color;
+}
 
-    &.login-button:hover {
-        background-color: #93052b;
-    }
+.login-button:hover {
+    background-color: #93052b;
+}
+
+.navbar-togger {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-togger:focus .btn-close:focus {
+    box-shadow: none;
+    outline: none;
 }
 
 .nav-link {
-    color: #F23D6D;
+    color: $c-rosa;
     font-weight: 500;
     position: relative;
     text-decoration: none;
+}
 
-    &.nav-link:hover {
-        color: #93052b;
-        text-decoration: underline;
-        text-decoration-color: #93052b;
-    }
+.nav-link:hover {
+    color: #93052b;
+    text-decoration: underline;
+    text-decoration-color: #93052b;
 }
 
 .active {
-    color: #eee !important;
+    color: $c-whitesmoke !important;
 }
 
 .offcanvas-body {
     background-color: #0D0D0D;
+}
 
-    &-header {
-        background-color: #0D0D0D;
+.offcanvas-header {
+    background-color: #0D0D0D;
+}
+
+.offcanvas-title {
+    color: #93052b;
+}
+
+span.navbar-toggler-icon,
+.btn-close {
+    filter: invert(1);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #93052b;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
     }
 
-    &-title {
-        color: #93052b;
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+
     }
 }
+
+/** Final CSS Navbar**/
