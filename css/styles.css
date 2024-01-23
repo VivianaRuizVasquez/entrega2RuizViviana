@@ -76,8 +76,15 @@
     color: #93052b;
 }
 
+span.navbar-toggler-icon,
+.btn-close {
+    filter: invert(1);
+}
+
 /** Final CSS Navbar**/
 
+/** Seccion Elementos compartidos**/
+/** Incluye fondo,colores fuentes, botones, cards y carrusel| **/
 body {
     background: #F2DFD8;
 }
@@ -86,7 +93,6 @@ body {
     margin-top: 200px;
 }
 
-/** Seccion de reglas que se aplican a varios elementos**/
 /** Este color Rosa es para contraste en las fuentes y titulos**/
 .c-rosa {
     color: #F23D6D;
@@ -113,12 +119,6 @@ body {
     color: #F23D6D;
 }
 
-.preguntas-puntos {
-    background-color: #F23D6D;
-    text-align: justify;
-    line-height: 2em;
-}
-
 .btn-negro {
     background-color: #0D0D0D;
     border: #0D0D0D 1px solid;
@@ -135,7 +135,8 @@ body {
 
 }
 
-.card p, .card-horror-herald p {
+.card p,
+.card-horror-herald p {
     border-radius: 16px;
     overflow: hidden;
     display: -webkit-box;
@@ -144,10 +145,7 @@ body {
 
 }
 
-
-/** CSS de Especificos seccion Carrusel|seccion Inicio| **/
-
-
+/** CSS de carrusel | **/
 .carouselExampleCaptions .carousel-item img {
     width: 100%;
     min-height: 600px;
@@ -155,15 +153,23 @@ body {
 
 }
 
-
-/** CSS de Especificos seccion Mejor Calificados |seccion Inicio| **/
-
+/** CSS de cards | **/
 .card img {
     height: 250px;
 }
 
-/** CSS de Especificos seccion footer |seccion Inicio| **/
+.container {
+    padding-top: 6vh;
 
+}
+
+.separacion {
+    margin: 10% 0;
+}
+
+/** Fin CSS secciones compartidas| **/
+
+/** CSS de Especificos seccion footer |seccion Inicio| **/
 
 .btn-crimsom {
     background-color: #93052b;
@@ -199,34 +205,6 @@ body {
 
 }
 
-/** Seccion |Horror Herald| **/
-.card-horror-herald {
-    margin: 10px;
-    background-color: #f2f2f2;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-top: 30px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* .card-body{
-    padding: 0 20px;
-} */
-.img-fluid {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.badge {
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    object-position: center;
-}
-
-/** Seccion |Horror Herald| **/
-
 .divider-content-center {
     position: absolute;
     top: 50%;
@@ -260,7 +238,6 @@ body {
     padding: 0 5%;
 }
 
-
 .fielData {
     display: flex;
     flex-direction: column;
@@ -279,20 +256,34 @@ body {
     width: 100%
 }
 
-.w-full {
+/** Final Seccion  Login | **/
+
+/** Seccion Inicio |Horror Herald| **/
+.card-horror-herald {
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-fluid {
+    height: 300px;
     width: 100%;
+    object-fit: cover;
 }
 
-
-.sub-title {
-    text-align: center;
-    font-weight: 700;
+.badge {
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-position: center;
 }
 
-.article {
-    width: 25% !important;
+/** Final Seccion Index| **/
 
-}
+/** Seccion Mi Cripta| **/
 
 .misFavoritos {
     display: flex;
@@ -303,7 +294,6 @@ body {
     width: 25%;
     border-right: solid 2px #0D0D0D;
 }
-
 
 .serieActual {
     display: flex;
@@ -327,6 +317,20 @@ body {
     flex-direction: column;
 }
 
+.w-full {
+    width: 100%;
+}
+
+.sub-title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.article {
+    width: 25% !important;
+
+}
+
 .fieldset-1 {
     width: 60%;
     padding: 0 15px;
@@ -336,43 +340,26 @@ body {
     width: 40%;
 }
 
-.container {
-    padding-top: 6vh;
-
-}
-
-.nuevos-lanzamientos {
-padding-top: 12vh;
-}*
-
-.echo{
-    gap: 20px;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.echo .card{
-    width: 20%;
-}
-
 @media screen and (max-width:480px) {
-    .echo{
+    .echo {
         flex-direction: column;
-    }  
+    }
 
-    .echo .card{
+    .echo .card {
         width: 100%;
     }
-    
+
     .form-series {
         flex-direction: column;
         align-content: baseline;
         align-items: center;
         padding: 0;
     }
+
     .fieldset-1 {
         width: 90%;
     }
+
     .fielData {
         width: 100%;
     }
@@ -380,16 +367,19 @@ padding-top: 12vh;
     .misFavoritos {
         flex-direction: column;
     }
+
     .mis-series {
         width: 100%;
         border-right: none;
         border-bottom: solid 2px black;
     }
+
     .serieActual {
         width: 100%;
         padding-left: 0;
         justify-content: center;
     }
+
     .serieActual img {
         width: 90%;
         object-fit: contain
@@ -402,7 +392,6 @@ padding-top: 12vh;
 }
 
 /*estilos calendario*/
-
 #calendar {
     border-collapse: collapse;
     width: 100%;
@@ -427,15 +416,6 @@ padding-top: 12vh;
     background-color: #d9d9d9;
 }
 
-
-.separacion {
-    margin: 10% 0;
-}
-
-
-
-
-
 @media screen and (max-width: 768px) {
     .nav-link::before {
         content: "";
@@ -456,11 +436,12 @@ padding-top: 12vh;
         visibility: visible;
 
     }
-
-    .article {
-        width: 90%;
-    }
 }
+
+.article {
+    width: 90%;
+}
+   /**Final Seccion Mi Cripta| **/
 
 @media screen and (min-width: 769px),
 (max-width:1024) {
@@ -469,9 +450,25 @@ padding-top: 12vh;
     }
 }
 
+/** Seccion Peliculas y Series| **/
 
+.nuevos-lanzamientos {
+    padding-top: 12vh;
+}
 
+* .echo {
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
 
+.echo .card {
+    width: 20%;
+}
+
+/** Final Seccion Peliculas y Series| **/
+
+/** Seccion Misiones| **/
 .profile {
     margin-top: 12vh;
     padding: 15px 0;
@@ -485,7 +482,7 @@ padding-top: 12vh;
 
 .miProfile {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: flex-end;
     width: 20%;
 }
@@ -502,6 +499,7 @@ padding-top: 12vh;
     object-fit: contain;
     border-radius: 50%;
 }
+
 .miProfile dl {
     color: white;
 }
@@ -511,37 +509,51 @@ padding-top: 12vh;
     justify-content: end;
     gap: 5%;
 }
-.myRibbons div{
+
+.myRibbons div {
     width: 20%;
     text-align: center;
 }
 
-.myRibbons div:hover{
-    border:solid 2px #eee
+.myRibbons div:hover {
+    border: solid 2px #eee
 }
-.myRibbons img{
+
+.myRibbons img {
     width: 50%;
 
 }
 
-.myRibbons h5{
-   color: white;
-   text-align: center;
+.myRibbons h5 {
+    color: white;
+    text-align: center;
 }
 
-.pqr{
+.maestros-del-terror .col {
+    overflow-x: scroll;
+}
+
+.preguntas-puntos {
+    background-color: #F23D6D;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.pqr {
     display: flex;
     justify-content: center;
     margin: 40px 0;
 }
 
-.pqr div{
+.pqr div {
     width: 70%;
 }
-.pqr summary{
+
+.pqr summary {
     font-size: 3rem;
 }
-.pqr details{
+
+.pqr details {
     font-size: 1.2rem;
 }
 
@@ -549,6 +561,7 @@ padding-top: 12vh;
     .profile {
         flex-direction: column;
     }
+
     .miProfile {
         width: 100%;
     }
@@ -558,6 +571,7 @@ padding-top: 12vh;
         width: 100px;
         height: 100px;
     }
+
     .myRibbons {
         justify-content: center;
     }
@@ -565,17 +579,11 @@ padding-top: 12vh;
     .myRibbons h5 {
         font-size: 16px;
     }
+
     .myRibbons div:hover {
         border: none;
     }
-    
+
 }
 
-span.navbar-toggler-icon, .btn-close {
-    filter: invert(1);
-}
-
-
-.maestros-del-terror .col {
-    overflow-x: scroll;
-}
+/** Final Seccion Misiones| **/
