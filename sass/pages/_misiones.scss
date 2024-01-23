@@ -1,0 +1,119 @@
+/** Seccion Misiones| **/
+.profile {
+    margin-top: 12vh;
+    padding: 15px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #0D0D0D;
+    align-items: center;
+
+}
+
+.miProfile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 20%;
+}
+
+.miProfile div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.miProfile img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.miProfile dl {
+    color: $c-whitesmoke;
+}
+
+.myRibbons {
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+}
+
+.myRibbons div {
+    width: 20%;
+    text-align: center;
+}
+
+.myRibbons div:hover {
+    border: solid 2px #eee
+}
+
+.myRibbons img {
+    width: 50%;
+
+}
+
+.myRibbons h5 {
+    color: $c-whitesmoke;
+    text-align: center;
+}
+
+.maestros-del-terror .col {
+    overflow-x: scroll;
+}
+
+.preguntas-puntos {
+    background-color: $c-rosa;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.pqr {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pqr div {
+    width: 70%;
+}
+
+.pqr summary {
+    font-size: 3rem;
+}
+
+.pqr details {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:768px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .miProfile {
+        width: 100%;
+    }
+
+    .miProfile div {
+        margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .myRibbons {
+        justify-content: center;
+    }
+
+    .myRibbons h5 {
+        font-size: 16px;
+    }
+
+    .myRibbons div:hover {
+        border: none;
+    }
+
+}
+
+/** Final Seccion Misiones| **/

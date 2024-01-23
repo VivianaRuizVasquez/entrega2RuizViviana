@@ -1,12 +1,12 @@
+/** CSS LOGIN |seccion LOGIN| **/
 .btn-login-social {
     font-size: 0.8rem;
     font-weight: 400;
-
-    & i {
-        vertical-align: text-top;
-    }
 }
 
+.btn-login-social i {
+    vertical-align: text-top;
+}
 
 .btn-outline-custom:hover {
     color: #31374a;
@@ -25,3 +25,56 @@
     background-repeat: no-repeat;
 
 }
+
+.divider-content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0.5rem;
+    background-color: #F2DFD8;
+    font-size: 0.8rem;
+    font-weight: 500%;
+    color: #392E40;
+}
+
+.divisor {
+    margin: 1rem 0;
+}
+
+.olvide-contraseña {
+    text-decoration: none;
+}
+
+.olvide-contraseña:hover {
+    text-decoration: underline;
+}
+
+
+.form-series {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.fielData {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    width: 100%
+}
+
+/** Final Seccion  Login | **/

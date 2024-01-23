@@ -1,4 +1,10 @@
-h1 {
-    color:rojo
-}
+@import "./base";
 
+@import "./components/navbar";
+@import "./components/footer";
+
+@import "./pages/index";
+@import "./pages/login";
+@import "./pages/micripta";
+@import "./pages/peliculasyseries";
+@import "./pages/misiones";

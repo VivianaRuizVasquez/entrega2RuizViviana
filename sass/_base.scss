@@ -1,0 +1,94 @@
+$ff-gillsans:"Gill Sans", Trebuchet, sans-serif;
+
+$c-whitesmoke:whitesmoke;
+$c-rosa: #F23D6D;
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/** Seccion Elementos compartidos**/
+/** Incluye fondo,colores fuentes, botones, cards y carrusel| **/
+body {
+    background: #F2DFD8;
+}
+
+.content {
+    margin-top: 200px;
+}
+
+/** Este color Rosa es para contraste en las fuentes y titulos**/
+.c-rosa {
+    color: #F23D6D;
+}
+
+.bg-negro {
+    color: #0D0D0D;
+}
+
+.c-white {
+    color: whitesmoke;
+}
+
+.bd-beige {
+    background-color: #F2DFD8;
+}
+
+/** Este gris es para fuentes **/
+.c-gris {
+    color: #392E40;
+}
+
+.c-main-titles {
+    color: #F23D6D;
+}
+
+.btn-negro {
+    background-color: #0D0D0D;
+    border: #0D0D0D 1px solid;
+    color: antiquewhite;
+    border-radius: 16px;
+
+}
+
+.btn-negro:hover {
+    background-color: whitesmoke;
+    border-color: #F23D5E;
+    color: #F23D5E;
+    border-radius: 16px;
+
+}
+
+.card p,
+.card-horror-herald p {
+    border-radius: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+
+.container {
+    padding-top: 6vh;
+
+}
+
+.separacion {
+    margin: 10% 0;
+}
+
+/** CSS de carrusel | **/
+.carouselExampleCaptions .carousel-item img {
+    width: 100%;
+    min-height: 600px;
+    object-fit: cover;
+
+}
+
+/** CSS de cards | **/
+.card img {
+    height: 250px;
+}
+/** Fin CSS secciones compartidas| **/
